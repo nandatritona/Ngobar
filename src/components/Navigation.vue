@@ -2,7 +2,7 @@
     <header>
         <nav class="container">
             <div class="branding">
-                <router-link class="header" :to="{ name: 'Home' }">Isti - Blogs</router-link>
+                <router-link class="header" :to="{ name: 'Home' }">IstiBlogs</router-link>
             </div>
             <div class="nav-links">
                 <ul v-show="!mobile">
@@ -11,7 +11,7 @@
                     <router-link class="link" to="#">Donasi</router-link>
                     <router-link class="link" to="#">Articles</router-link>
                     <router-link class="link" to="#">Foto</router-link>
-                    <router-link class="link" to="#">Video</router-link>
+                    <router-link class="link" to="#">Tonton video</router-link>
                 </ul>
             </div>
         </nav>
