@@ -1,13 +1,17 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+    <BlogPost :post="welcomeScreen"/>
+    <BlogPost :post="post" v-for="(post, index) in sampleBlogPost" :key="index"/>
   </div>
 </template>
 
 <script>
+import BlogPost from '../components/BlogPost';
+
 export default {
   name: "Home",
-  components: {},
+  components: { BlogPost },
   data() {
     return {
         welcomeScreen: {
@@ -20,10 +24,10 @@ export default {
             {
                 title: 'This a filter blog post title!',
                 blogHtml: 'This a filter blog post title!',
-                blogCoverPhoto: 'beatiful-stories',
+                blogCoverPhoto: 'beautiful-stories',
             },
             {
-                title: 'This a filter blog post title!',
+                title: 'This a filter blog post title2!',
                 blogHtml: 'This a filter blog post title!',
                 blogCoverPhoto: 'designed-for-everyone',
             },
