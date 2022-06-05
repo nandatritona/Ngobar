@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="blog-wrapper">
+    <div class="blog-wrapper no-user">
         <div class="blog-content">
             <div>
                 <h2 v-if="post.welcomeScreen">{{post.title}}</h2>
@@ -9,9 +9,7 @@
                 <router-link class="link link-light" v-if="post.welcomeScreen" to="#">
                     Tonton video<Arrow class="arrow arrow-light" />
                 </router-link>
-                <router-link class="link link-light" v-else to="#">
-                    Articles<Arrow class="arrow arrow-light" />
-                </router-link>
+                <router-link class="link" v-else to="#">Articles<Arrow class="arrow" /></router-link>
             </div>
         </div>
         <div class="blog-photo">
@@ -22,11 +20,10 @@
 </template>
 <script>
 import Arrow from "../assets/Icons/arrow-right-light.svg";
-
 export default {
     name: "BlogPost",
     props: ["post"],
-    component: {
+    components: {
         Arrow
     },
 };
@@ -155,6 +152,13 @@ export default {
         .blog-photo {
             order: 1;
         }
+    }
+}
+
+.no-user:first-child {
+    .blog-content {
+        background-color: #303030;
+        color: #fff;
     }
 }
 

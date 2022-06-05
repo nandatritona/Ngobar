@@ -3,7 +3,7 @@
         <div class="container">
             <div class="left">
                 <div class="col-1">
-                    <router-link class="header" :to="{ name: 'home' }">IstiBlogs</router-link>
+                    <router-link class="header" :to="{ name: 'Home' }">IstiBlogs</router-link>
                     <ul>
                         <li>
                             <a href="#"><youTube class="svg-icon"/></a>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-2">
                     <ul>
-                        <router-link class="link" :to="{ name: 'home' }">Home</router-link>
+                        <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
                         <router-link class="link" :to="{ name: 'donasi' }">Donasi</router-link>
                         <router-link v-if="user" class="link" :to="{ name: 'newpost' }">Create Post</router-link>
                         <router-link v-if="!user" class="link" :to="{ name: 'tips' }">Tips and Triks</router-link>
