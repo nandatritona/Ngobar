@@ -12,6 +12,7 @@
                     <router-link class="link" to="#">Articles</router-link>
                     <router-link class="link" to="#">Foto</router-link>
                     <router-link class="link" to="#">Tonton video</router-link>
+                    <router-link class="link" to="#">Login or Register</router-link>
                 </ul>
             </div>
         </nav>
@@ -24,6 +25,7 @@
                 <router-link class="link" to="#">Articles</router-link>
                 <router-link class="link" to="#">Foto</router-link>
                 <router-link class="link" to="#">Video</router-link>
+                <router-link class="link" to="#">Login or Register</router-link>
             </ul>
         </transition>
     </header>
