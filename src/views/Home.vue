@@ -1,17 +1,26 @@
-<template>
+<template lang="">
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <BlogPost :post="welcomeScreen"/>
     <BlogPost :post="post" v-for="(post, index) in sampleBlogPost" :key="index"/>
+    <div class="blog-card-wrap">
+        <div class="container">
+            <h3>View More Recent Blogs</h3>
+            <div class="blog-cards">
+                <BlogCards :post="post" v-for="(post, index) in sampleBlogCards" :key="index" />
+            </div>
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
 import BlogPost from '../components/BlogPost';
+import BlogCards from '../components/BlogCard';
 
 export default {
   name: "Home",
-  components: { BlogPost },
+  components: { BlogPost, BlogCards },
   data() {
     return {
         welcomeScreen: {
@@ -27,8 +36,8 @@ export default {
                 blogCoverPhoto: 'beautiful-stories',
             },
             {
-                title: 'This a filter blog post title2!',
-                blogHtml: 'This a filter blog post title!',
+                title: 'This a filter title2!',
+                blogHtml: 'This a filter title!',
                 blogCoverPhoto: 'designed-for-everyone',
             },
         ],
@@ -42,3 +51,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.blog-card-wrap {
+    h3 {
+        font-weight: 300;
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+}
+    
+</style>
