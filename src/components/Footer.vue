@@ -24,7 +24,7 @@
                         <router-link class="link" :to="{ name: 'Home' }">About</router-link>
                         <router-link class="link" :to="{ name: 'press' }">Press</router-link>
                         <router-link v-if="user" class="link" :to="{ name: 'tips' }">Create Post</router-link>
-                        <router-link v-if="!user" class="link" :to="{ name: 'join' }">Join the team</router-link>
+                        <router-link v-if="!user" class="link" :to="{ name: 'team' }">Team Creative</router-link>
                     </ul>
                 </div>
             </div>
