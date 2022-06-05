@@ -11,6 +11,11 @@
                 </div>
             </div>
         </div>
+        <div class="updates">
+            <div class="container">
+                never miss a post
+            </div>
+        </div>
     </div>
 </template>
 
@@ -27,18 +32,18 @@ export default {
                 title: "Welcome!",
                 blogPost: "Sedang Dalam Tahap Pengembangan !!",
                 welcomeScreen: true,
-                photo: "coding",
+                photo: "blog-1",
             },
             sampleBlogPost: [
                 {
                     title: 'This a filter blog post title!',
                     blogHtml: 'This a filter blog post title!',
-                    blogCoverPhoto: 'beautiful-stories',
+                    blogCoverPhoto: 'blog-2',
                 },
                 {
                     title: 'This a filter title2!',
                     blogHtml: 'This a filter title!',
-                    blogCoverPhoto: 'designed-for-everyone',
+                    blogCoverPhoto: 'blog-3',
                 },
             ],
             sampleBlogCards: [
