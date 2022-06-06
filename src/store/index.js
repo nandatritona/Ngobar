@@ -7,24 +7,28 @@ export default new Vuex.Store({
     state: {
         sampleBlogCards: [
             {
-                blogTitle: "Blog Card #1",
-                blogCoverPhoto: "stock-1",
+                blogTitle: "Masjid Baiturrahman",
+                blogCoverPhoto: "Masjid-1",
                 blogDate: "Jun 5, 2022",
+                blogAddres: "Banda Aceh",
             },
             {
                 blogTitle: "Blog Card #2",
-                blogCoverPhoto: "stock-2",
+                blogCoverPhoto: "Masjid-2",
                 blogDate: "Jun 5, 2022",
+                blogAddres: "",
             },
             {
-                blogTitle: "Blog Card #3",
-                blogCoverPhoto: "stock-3",
+                blogTitle: "Masjid Muslim Rusia",
+                blogCoverPhoto: "Masjid-3",
                 blogDate: "Jun 5, 2022",
+                blogAddres: "bolghar, rusiia",
             },
             {
                 blogTitle: "Blog Card #4",
-                blogCoverPhoto: "stock-4",
+                blogCoverPhoto: "Masjid-4",
                 blogDate: "Jun 5, 2022",
+                blogAddres: "",
             },
         ],
     },
