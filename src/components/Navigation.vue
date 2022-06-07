@@ -7,11 +7,11 @@
             <div class="nav-links">
                 <ul v-show="!mobile">
                     <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
-                    <router-link class="link" to="#">Tips And Triks</router-link>
-                    <router-link class="link" to="#">Donasi</router-link>
-                    <router-link class="link" to="#">Articles</router-link>
+                    <router-link class="link" :to="{ name: 'TipsAndTrik' }">Tips And Triks</router-link>
+                    <router-link class="link" :to="{ name: 'Donasi' }">Donasi</router-link>
+                    <router-link class="link" :to="{ name: 'articles' }">Articles</router-link>
                     <router-link class="link" :to="{ name: 'Foto'}">Foto</router-link>
-                    <router-link class="link" to="#">Tonton video</router-link>
+                    <router-link class="link" :to="{ name: 'Video' }">Tonton video</router-link>
                     <router-link class="link" to="#">Login or Register</router-link>
                 </ul>
             </div>

@@ -2,6 +2,12 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Foto from "../views/Foto.vue"
+import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
+import TipsAndTrik from "../views/TipsAndTrik.vue";
+import Donasi from "../views/Donasi.vue";
+import Artikel from "../views/Articles.vue";
+import Video from "../views/Video.vue";
 
 Vue.use(VueRouter);
 
@@ -15,11 +21,59 @@ const routes = [
         },
     },
     {
+        path: "/TipsAndTrik",
+        name: "TipsAndTrik",
+        component: TipsAndTrik,
+        meta: {
+            title: "Tips And Triks",
+        },
+    },
+    {
+        path: "/donasi",
+        name: "Donasi",
+        component: Donasi,
+        meta: {
+            title: "Donasi",
+        },
+    },
+    {
+        path: "/articles",
+        name: "articles",
+        component: Artikel,
+        meta: {
+            title: "Articles",
+        },
+    },
+    {
         path: "/foto",
         name: "Foto",
         component: Foto,
         meta: {
             title: "Foto",
+        },
+    },
+    {
+        path: "/video",
+        name: "Video",
+        component: Video,
+        meta: {
+            title: "Video",
+        },
+    },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
+        meta: {
+            title: "Login",
+        },
+    },
+    {
+        path: "/register",
+        name: "Register",
+        component: Register,
+        meta: {
+            title: "Register",
         },
     },
 ];
