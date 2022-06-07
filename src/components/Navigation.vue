@@ -6,11 +6,11 @@
             </div>
             <div class="nav-links">
                 <ul v-show="!mobile">
-                    <router-link class="link" to="#">Home</router-link>
+                    <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
                     <router-link class="link" to="#">Tips And Triks</router-link>
                     <router-link class="link" to="#">Donasi</router-link>
                     <router-link class="link" to="#">Articles</router-link>
-                    <router-link class="link" to="#">Foto</router-link>
+                    <router-link class="link" :to="{ name: 'Foto'}">Foto</router-link>
                     <router-link class="link" to="#">Tonton video</router-link>
                     <router-link class="link" to="#">Login or Register</router-link>
                 </ul>
@@ -19,11 +19,11 @@
         <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile"/>
         <transition name="mobile-nav">
             <ul class="mobile-nav" v-show="mobileNav">
-                <router-link class="link" to="#">Home</router-link>
+                <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
                 <router-link class="link" to="#">Tips And Triks</router-link>
                 <router-link class="link" to="#">Donasi</router-link>
                 <router-link class="link" to="#">Articles</router-link>
-                <router-link class="link" to="#">Foto</router-link>
+                <router-link class="link" :to="{ name: 'Foto'}">Foto</router-link>
                 <router-link class="link" to="#">Video</router-link>
                 <router-link class="link" to="#">Login or Register</router-link>
             </ul>

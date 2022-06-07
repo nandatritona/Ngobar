@@ -31,8 +31,14 @@ export default new Vuex.Store({
                 blogAddres: "",
             },
         ],
+        editPost: null,
     },
-    mutations: {},
+    mutations: {
+        toggleEditPost(state, payload) {
+            state.editPost = payload;
+            console.log(state.editPost);
+        },
+    },
     actions: {},
     modules: {},
 });
