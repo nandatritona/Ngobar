@@ -21,10 +21,10 @@
                 </div>
                 <div class="col-2">
                     <ul>
-                        <router-link class="link" :to="{ name: 'Home' }">About</router-link>
-                        <router-link class="link" :to="{ name: 'press' }">Press</router-link>
-                        <router-link v-if="user" class="link" :to="{ name: 'tips' }">Create Post</router-link>
-                        <router-link v-if="!user" class="link" :to="{ name: 'team' }">Team Creative</router-link>
+                        <router-link class="link" to="#">About</router-link>
+                        <router-link class="link" to="#">Press</router-link>
+                        <router-link v-if="user" class="link" to="#">Create Post</router-link>
+                        <router-link v-if="!user" class="link" to="#">Team Creative</router-link>
                     </ul>
                 </div>
             </div>

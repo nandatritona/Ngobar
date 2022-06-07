@@ -20,11 +20,11 @@
         <transition name="mobile-nav">
             <ul class="mobile-nav" v-show="mobileNav">
                 <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
-                <router-link class="link" to="#">Tips And Triks</router-link>
-                <router-link class="link" to="#">Donasi</router-link>
-                <router-link class="link" to="#">Articles</router-link>
-                <router-link class="link" :to="{ name: 'Foto'}">Foto</router-link>
-                <router-link class="link" to="#">Video</router-link>
+                    <router-link class="link" :to="{ name: 'TipsAndTrik' }">Tips And Triks</router-link>
+                    <router-link class="link" :to="{ name: 'Donasi' }">Donasi</router-link>
+                    <router-link class="link" :to="{ name: 'articles' }">Articles</router-link>
+                    <router-link class="link" :to="{ name: 'Foto'}">Foto</router-link>
+                    <router-link class="link" :to="{ name: 'Video' }">Tonton video</router-link>
                 <router-link class="link" to="#">Login or Register</router-link>
             </ul>
         </transition>
