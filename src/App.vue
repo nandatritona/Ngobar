@@ -1,26 +1,43 @@
 <template lang="">
-  <div class="app-wrapper">
-    <div class="app">
-        <Navigation />
-        <router-view />
-        <Footer />
+    <div class="app-wrapper">
+        <div class="app">
+            <Navigation v-if="!navigation" />
+            <router-view />
+            <Footer v-if="!navigation" />
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+
 export default {
-  name: "app",
-  components: { Navigation, Footer },
-  data() {
-    return {};
-  },
-  created() {},
-  mounted() {},
-  methods: {},
-  watch: {},
+    name: "app",
+    components: { Navigation, Footer },
+    data() {
+        return {
+            navigation: null,
+        };
+    },
+    created() {
+        this.checkRoute();
+    },
+    mounted() {},
+    methods: {
+        checkRoute() {
+            if (this.$route.name === "Login" || this.$route.name === "Register" || this.$route.name === "ForgotPassword") {
+                this.navigation = true;
+            } else {
+                this.navigation = false;
+            }
+        },
+    },
+    watch: {
+        $route() {
+            this.checkRoute();
+        }
+    },
 };
 </script>
 
@@ -28,32 +45,32 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .link {
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
 .link-light {
-  color: #fff;
+    color: #fff;
 }
 
 .arrow {

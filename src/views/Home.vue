@@ -33,15 +33,15 @@ export default {
     data() {
         return {
             welcomeScreen: {
-                title: "Welcome!",
-                blogPost: "Sedang Dalam Tahap Pengembangan !!",
+                title: "Get Reward from Allah for Everyday’s Actions",
+                blogPost: '"The practical way to apply this is by making your intention to do things for the sake of Allah (SWT), even if these things seem…"',
                 welcomeScreen: true,
                 photo: "blog-1",
             },
             sampleBlogPost: [
                 {
-                    title: 'This a filter blog post title!',
-                    blogHtml: 'This a filter blog post title!',
+                    title: 'Satu-Satunya Cara Menjadikan Al-Qur’an Sebagai Pedoman Hidup ialah Memahaminya',
+                    blogHtml: 'By : Ust. Nasruddin',
                     blogCoverPhoto: 'blog-2',
                 },
                 {

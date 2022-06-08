@@ -7,9 +7,9 @@
                 <p v-if="post.welcomeScreen">{{post.blogPost}}</p>
                 <p class="content-preview" v-else>{{post.blogHtml}}</p>
                 <router-link class="link link-light" v-if="post.welcomeScreen" to="#">
-                    Tonton video<Arrow class="arrow arrow-light" />
+                    Load More<Arrow class="arrow arrow-light" />
                 </router-link>
-                <router-link class="link" v-else to="#">Articles<Arrow class="arrow" /></router-link>
+                <router-link class="link" v-else :to="{ name: 'articles' }">Articles<Arrow class="arrow" /></router-link>
             </div>
         </div>
         <div class="blog-photo">
@@ -90,7 +90,7 @@ export default {
             }
             p {
                 font-size: 15px;
-                font-weight: 300;
+                font-weight: 500;
                 line-height: 1.7;
                 // margin-bottom: 24px;
                 // @media (min-width: 700px) {

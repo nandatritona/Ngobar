@@ -8,6 +8,7 @@ import TipsAndTrik from "../views/TipsAndTrik.vue";
 import Donasi from "../views/Donasi.vue";
 import Artikel from "../views/Articles.vue";
 import Video from "../views/Video.vue";
+import ForgotPassword from "../views/ForgotPassword.vue";
 
 Vue.use(VueRouter);
 
@@ -21,7 +22,7 @@ const routes = [
         },
     },
     {
-        path: "/TipsAndTrik",
+        path: "/Tips-And-Trik",
         name: "TipsAndTrik",
         component: TipsAndTrik,
         meta: {
@@ -74,6 +75,14 @@ const routes = [
         component: Register,
         meta: {
             title: "Register",
+        },
+    },
+    {
+        path: "/forgot-password",
+        name: "ForgotPassord",
+        component: ForgotPassword,
+        meta: {
+            title: "Forgot Password",
         },
     },
 ];
